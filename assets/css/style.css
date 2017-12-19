@@ -1,0 +1,69 @@
+@font-face {
+    font-family: 'BebasNeue';
+    src: url('../fonts/BebasNeue.woff') format('woff'),
+         url('../fonts/BebasNeue.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'LaneCane';
+    src: url('../fonts/LaneCane.woff') format('woff'),
+         url('../fonts/LaneCane.ttf') format('truetype');
+}
+
+.ui.container {
+    padding-top: 10%;
+}
+
+h1.ui.header {
+    font-family: 'BebasNeue' !important;
+    font-size: 24px !important;
+    font-weight: bold !important;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-bottom: unset !important;
+}
+
+.ui.vertical.menu {
+    border: none;
+    box-shadow: none;
+    margin-top: unset;
+}
+
+.ui.vertical.menu .item:before {
+    display: none;
+}
+
+a.menu.title {
+    font-family: 'LaneCane', sans-serif !important;
+    font-size: 18px !important;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+a.menu.title.active, a.sub.menu.title {
+    background-color: black;
+    color: white !important;
+    font-style: italic;
+    width: fit-content;
+}
+
+a.sub.menu.title {
+    text-transform: none;
+}
+
+.ui.menu .item {
+    padding: 3% 0%;
+}
+
+.submenu.content {
+    width: max-content;
+    padding-bottom: 10% !important;
+}
+
+.ui.vertical.menu .item>.menu {
+    margin: unset;
+}
+
+.ui.inverted.black.button, .ui.inverted.black.buttons .button {
+    color: black;
+}
