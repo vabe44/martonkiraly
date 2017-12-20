@@ -134,6 +134,8 @@ h1#contactname {
     font-weight: 400 !important;
     padding-top: 40px;
     text-transform: uppercase;
+    font-family: 'BebasNeue';
+    margin-bottom: 0px;
 }
 
 h2#contacttitle {
