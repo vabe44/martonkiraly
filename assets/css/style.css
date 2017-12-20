@@ -11,16 +11,39 @@
 }
 
 .ui.container {
-    padding-top: 10%;
+    padding: 100px 50px 0px 100px;
 }
 
-h1.ui.header {
+#menutitle {
     font-family: 'BebasNeue' !important;
     font-size: 24px !important;
     font-weight: bold !important;
     letter-spacing: 5px;
     text-transform: uppercase;
     margin-bottom: unset !important;
+}
+
+#menutitle a {
+    color: black;
+}
+
+h2.ui.header {
+    font-family: 'BebasNeue' !important;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-bottom: unset !important;
+}
+
+p {
+    font-family: 'LaneCane' !important;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    margin-bottom: unset;
+    line-height: 22px;
+}
+
+.four.wide.menu.column {
+    min-width: 292px;
 }
 
 .ui.vertical.menu {
@@ -53,20 +76,18 @@ a.sub.menu.title {
 }
 
 .ui.menu .item {
-    padding: 3% 0%;
+    padding: 8px 0;
+    display: table !important;
 }
 
 .submenu.content {
     width: max-content;
-    padding-bottom: 10% !important;
+    padding-bottom: 25px !important;
 }
 
 .ui.vertical.menu .item>.menu {
     margin: unset;
-}
-
-.ui.inverted.black.button, .ui.inverted.black.buttons .button {
-    color: black;
+    display: table;
 }
 
 /* Top left text */
@@ -89,6 +110,62 @@ a.sub.menu.title {
     background-color: transparent;
 }
 
-/* .item.transition.visible {
-    padding: 0;
-} */
+.contactcard {
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 460px;
+}
+
+.contactcard a {
+    color: white;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+}
+
+h1#contactname {
+    font-size: 20px !important;
+    letter-spacing: 10px;
+    font-weight: 400 !important;
+    padding-top: 40px;
+    text-transform: uppercase;
+}
+
+h2#contacttitle {
+    font-size: 18px;
+    letter-spacing: 11px;
+    font-weight: 400 !important;
+    margin-top: 0px;
+}
+
+.social > p {
+    padding: 0 10px;
+    width: 44%;
+}
+
+p.instalink {
+    text-align: right;
+}
+
+.bloglink {
+    width: 12% !important;
+    padding: unset !important;
+}
+
+.behancelink {
+    text-align: left;
+}
+
+img.contact.logo {
+    width: 60px;
+    height: auto;
+    border: 2px solid white;
+    border-radius: 30px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}

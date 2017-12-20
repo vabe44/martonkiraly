@@ -10,36 +10,16 @@
     <!-- Site Properties -->
     <title>Márton Király Photography</title>
     <link rel="stylesheet" type="text/css" href="assets/css/semantic.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/slick.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
     <script src="assets/scripts/jquery.min.js"></script>
     <script src="assets/scripts/semantic.min.js"></script>
-    <script src="assets/scripts/slick.min.js"></script>
     <script>
         $(document)
             .ready(function () {
 
                 $('.ui.accordion')
                 .accordion();
-
-                $('.fade').slick({
-                    adaptiveHeight: true,
-                    dots: false,
-                    infinite: true,
-                    speed: 800,
-                    fade: true,
-                    cssEase: 'linear',
-                    arrows: false
-                });
-
-                $('.slidenavleft').on('click', function(){
-                    $('.fade').slick("slickPrev");
-                });
-
-                $('.slidenavright').on('click', function(){
-                    $('.fade').slick("slickNext");
-                });
 
             });
     </script>
@@ -101,7 +81,7 @@
                         </a>
                     </div>
                     <div class="item">
-                        <a class="menu title" href="contact.html">
+                        <a class="active menu title">
                             Contact
                         </a>
                     </div>
@@ -110,37 +90,31 @@
 
             <div class="ten wide computer sixteen wide tablet sixteen wide mobile column">
 
-                <div class="fade">
-                    <div>
-                        <img class="ui fluid image" src="assets/images/01.jpg" alt="">
-                        <div class="slidenavleft"></div>
-                        <div class="slidenavright"></div>
+                <div class="contactcard">
+
+                    <h1 id="contactname" class="ui inverted header">Márton Király</h1>
+                    <h2 id="contacttitle" class="ui inverted header">Photographer</h2>
+                    <p>
+                        <a href="tel:+36302600287">+36/30 2600 287</a>
+                    </p>
+                    <p>
+                        <a href="mailto:martonkiralyphoto@gmail.com">martonkiralyphoto@gmail.com</a>
+                    </p>
+                    <div class="social">
+                        <p class="instalink">
+                            <a href="https://instagram.com/martonkiraly">instagram</a>
+                        </p>
+                        <p class="bloglink">
+                            <a href="https://kiralymarton.blogspot.hu">blog</a>
+                        </p>
+                        <p class="behancelink">
+                            <a href="https://www.behance.net/Marton_Kiraly">behance</a>
+                        </p>
                     </div>
-                    <div>
-                        <img class="ui fluid image" src="assets/images/02.jpg" alt="">
-                        <div class="slidenavleft"></div>
-                        <div class="slidenavright"></div>
-                    </div>
-                    <div>
-                        <img class="ui fluid image" src="assets/images/03.jpg" alt="">
-                        <div class="slidenavleft"></div>
-                        <div class="slidenavright"></div>
-                    </div>
-                    <div>
-                        <img class="ui fluid image" src="assets/images/04.jpg" alt="">
-                        <div class="slidenavleft"></div>
-                        <div class="slidenavright"></div>
-                    </div>
-                    <div>
-                        <img class="ui fluid image" src="assets/images/05.jpg" alt="">
-                        <div class="slidenavleft"></div>
-                        <div class="slidenavright"></div>
-                    </div>
-                    <div>
-                        <img class="ui fluid image" src="assets/images/06.jpg" alt="">
-                        <div class="slidenavleft"></div>
-                        <div class="slidenavright"></div>
-                    </div>
+                    <p>
+                        <img class="contact logo" src="assets/images/logo.png" alt="logo">
+                    </p>
+
                 </div>
 
             </div>
