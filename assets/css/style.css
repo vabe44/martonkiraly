@@ -34,13 +34,13 @@ h1.ui.header {
 }
 
 a.menu.title {
-    font-family: 'LaneCane', sans-serif !important;
+    /* font-family: 'LaneCane', sans-serif !important; */
     font-size: 18px !important;
     text-transform: uppercase;
     letter-spacing: 5px;
 }
 
-a.menu.title.active, a.sub.menu.title {
+a.menu.title.active, a.sub.menu.title.active, a.menu.title:hover, a.menu.title:focus, a.sub.menu.title:hover, a.sub.menu.title:focus {
     background-color: black;
     color: white !important;
     font-style: italic;
@@ -49,6 +49,7 @@ a.menu.title.active, a.sub.menu.title {
 
 a.sub.menu.title {
     text-transform: none;
+    width: fit-content;
 }
 
 .ui.menu .item {
@@ -67,3 +68,27 @@ a.sub.menu.title {
 .ui.inverted.black.button, .ui.inverted.black.buttons .button {
     color: black;
 }
+
+/* Top left text */
+.slidenavleft {
+    position: absolute;
+    height: 100% !important;
+    width: 50% !important;
+    top: 0px;
+    left: 0px;
+    background-color: transparent;
+}
+
+/* Top right text */
+.slidenavright {
+    position: absolute;
+    height: 100% !important;
+    width: 50% !important;
+    top: 0px;
+    right: 0px;
+    background-color: transparent;
+}
+
+/* .item.transition.visible {
+    padding: 0;
+} */

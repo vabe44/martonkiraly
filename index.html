@@ -9,17 +9,38 @@
 
     <!-- Site Properties -->
     <title>Homepage - Semantic</title>
-    <link rel="stylesheet" type="text/css" href="assets/dist/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
-    <script src="assets/library/jquery.min.js"></script>
-    <script src="assets/dist/semantic.min.js"></script>
+    <script src="assets/scripts/jquery.min.js"></script>
+    <script src="assets/scripts/semantic.min.js"></script>
+    <script src="assets/scripts/slick.min.js"></script>
     <script>
         $(document)
             .ready(function () {
 
                 $('.ui.accordion')
                 .accordion();
+
+                $('.fade').slick({
+                    adaptiveHeight: true,
+                    dots: false,
+                    infinite: true,
+                    speed: 800,
+                    fade: true,
+                    cssEase: 'linear',
+                    arrows: false
+                });
+
+                $('.slidenavleft').on('click', function(){
+                    $('.fade').slick("slickPrev");
+                });
+
+                $('.slidenavright').on('click', function(){
+                    $('.fade').slick("slickNext");
+                });
+
             });
     </script>
 </head>
@@ -27,60 +48,103 @@
 <body>
 
     <div class="ui container">
-        <h1 class="ui header">Márton Király</h1>
-        <div class="ui vertical accordion menu">
-            <div class="item">
-                <a class="active menu title">
-                    Personal
-                </a>
-            </div>
-            <div class="item">
-                <a class="menu title">
-                    Commercial
-                </a>
-                <div class="submenu content">
-                    <div class="item">
-                        <a class="sub menu title">
-                            Enterieur/Architecture
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a class="sub menu title">
-                            Event
-                        </a>
-                    </div>
 
+        <div class="ui grid">
+            <div class="four wide column">
+
+                <h1 class="ui header">Márton Király</h1>
+                <div class="ui vertical accordion menu">
                     <div class="item">
-                        <a class="sub menu title">
-                            Fashion
+                        <a class="menu title">
+                            Personal
                         </a>
                     </div>
-
                     <div class="item">
-                        <a class="sub menu title">
-                            Business Portrait
+                        <a class="menu title">
+                            Commercial
+                        </a>
+                        <div class="submenu content">
+                            <div class="item">
+                                <a class="sub menu title">
+                                    Enterieur/Architecture
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a class="sub menu title">
+                                    Event
+                                </a>
+                            </div>
+
+                            <div class="item">
+                                <a class="sub menu title">
+                                    Fashion
+                                </a>
+                            </div>
+
+                            <div class="item">
+                                <a class="sub menu title">
+                                    Business Portrait
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a class="menu title">
+                            Video
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a class="menu title">
+                            About
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a class="menu title">
+                            Contact
                         </a>
                     </div>
                 </div>
             </div>
-            <div class="item">
-                <a class="menu title">
-                    Video
-                </a>
-            </div>
-            <div class="item">
-                <a class="menu title">
-                    About
-                </a>
-            </div>
-            <div class="item">
-                <a class="menu title">
-                    Contact
-                </a>
+
+            <div class="twelve wide column">
+
+                <div class="fade">
+                    <div>
+                        <img class="ui fluid image" src="assets/images/01.jpg" alt="">
+                        <div class="slidenavleft"></div>
+                        <div class="slidenavright"></div>
+                    </div>
+                    <div>
+                        <img class="ui fluid image" src="assets/images/02.jpg" alt="">
+                        <div class="slidenavleft"></div>
+                        <div class="slidenavright"></div>
+                    </div>
+                    <div>
+                        <img class="ui fluid image" src="assets/images/03.jpg" alt="">
+                        <div class="slidenavleft"></div>
+                        <div class="slidenavright"></div>
+                    </div>
+                    <div>
+                        <img class="ui fluid image" src="assets/images/04.jpg" alt="">
+                        <div class="slidenavleft"></div>
+                        <div class="slidenavright"></div>
+                    </div>
+                    <div>
+                        <img class="ui fluid image" src="assets/images/05.jpg" alt="">
+                        <div class="slidenavleft"></div>
+                        <div class="slidenavright"></div>
+                    </div>
+                    <div>
+                        <img class="ui fluid image" src="assets/images/06.jpg" alt="">
+                        <div class="slidenavleft"></div>
+                        <div class="slidenavright"></div>
+                    </div>
+                </div>
+
             </div>
         </div>
-    </div>
 
+    </div>
 
 </body>
 
