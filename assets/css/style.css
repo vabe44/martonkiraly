@@ -16,7 +16,7 @@
 
 #menutitle {
     font-family: 'BebasNeue' !important;
-    font-size: 24px !important;
+    font-size: 18px !important;
     font-weight: bold !important;
     letter-spacing: 5px;
     text-transform: uppercase;
@@ -36,10 +36,10 @@ h2.ui.header {
 
 p {
     font-family: 'LaneCane' !important;
-    font-size: 18px;
+    font-size: 14px;
     letter-spacing: 1.5px;
     margin-bottom: unset;
-    line-height: 22px;
+    line-height: 18px;
 }
 
 .four.wide.menu.column {
@@ -58,7 +58,7 @@ p {
 
 a.menu.title {
     /* font-family: 'LaneCane', sans-serif !important; */
-    font-size: 18px !important;
+    font-size: 14px !important;
     text-transform: uppercase;
     letter-spacing: 5px;
 }
