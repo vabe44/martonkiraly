@@ -13,6 +13,14 @@
     <link rel="stylesheet" type="text/css" href="assets/css/slick.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
+    <link rel="icon" href="assets/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/manifest.json">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+
     <script src="assets/scripts/jquery.min.js"></script>
     <script src="assets/scripts/semantic.min.js"></script>
     <script src="assets/scripts/slick.min.js"></script>
@@ -30,7 +38,11 @@
                     speed: 800,
                     fade: true,
                     cssEase: 'linear',
-                    arrows: false
+                    arrows: false,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 2000,
                 });
 
                 $('.slidenavleft').on('click', function(){

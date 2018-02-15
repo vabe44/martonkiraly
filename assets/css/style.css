@@ -10,6 +10,22 @@
          url('../fonts/LaneCane.ttf') format('truetype');
 }
 
+
+.slick-track {
+    height: 70vh !important;
+}
+
+.slick-track:focus, .slick-slide:focus {
+    outline: none !important;
+}
+
+img.ui.fluid.image {
+    max-height: 100%;
+    width: auto;
+    margin: 0 auto;
+}
+
+
 .ui.container {
     padding: 100px 50px 0px 100px;
 }
@@ -63,7 +79,21 @@ a.menu.title {
     letter-spacing: 5px;
 }
 
-a.menu.title.active, a.sub.menu.title.active, a.menu.title:hover, a.menu.title:focus, a.sub.menu.title:hover, a.sub.menu.title:focus {
+a.menu.title.active, a.sub.menu.title.active, a.menu.title:hover, a.sub.menu.title:hover, a.menu.title:focus, a.sub.menu.title:focus {
+    background-color: black;
+    color: white !important;
+    font-style: italic;
+    width: fit-content;
+}
+
+a.project.menu.title.active, a.project.sub.menu.title.active {
+    background-color: unset;
+    color: black !important;
+    font-style: italic;
+    width: fit-content;
+}
+
+a.project.menu.title:hover, a.project.sub.menu.title:hover, a.project.menu.title:focus, a.project.sub.menu.title:focus {
     background-color: black;
     color: white !important;
     font-style: italic;
@@ -73,6 +103,10 @@ a.menu.title.active, a.sub.menu.title.active, a.menu.title:hover, a.menu.title:f
 a.sub.menu.title {
     text-transform: none;
     width: fit-content;
+}
+
+.personal.content, .project.content, .commercial.content {
+    margin-left: 10px;
 }
 
 .ui.menu .item {
@@ -170,4 +204,41 @@ img.contact.logo {
     border-radius: 30px;
     margin-top: 10px;
     margin-bottom: 25px;
+}
+
+.about.section > .about.text, .about.section > .about.contact > p {
+    color: black;
+    font-size: 15px;
+    line-height: 1.5em;
+}
+
+.igazolvanykep {
+    max-width: 100px !important;
+}
+
+.about.contact {
+    margin: 25px 0;
+}
+
+.about.section > .second.about.text {
+    margin-top: 100px;
+}
+
+p.video.title {
+    font-family: unset !important;
+    font-weight: bold;
+    font-size: 1.25em;
+    padding: 10px 0;
+}
+
+p.project.details {
+    font-family: unset !important;
+    line-height: 1.5em;
+    font-size: 1.25em;
+    padding: 10px
+}
+
+.about.text, .about.contact > p > a {
+    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif !important;
+    color: black;
 }

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Standard Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <!-- Site Properties -->
+    <title>Márton Király Photography</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <link rel="icon" href="assets/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/manifest.json">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+
+    <script src="assets/scripts/jquery.min.js"></script>
+    <script src="assets/scripts/semantic.min.js"></script>
+    <script src="assets/scripts/slick.min.js"></script>
+    <script>
+        $(document)
+            .ready(function () {
+
+                $('.ui.accordion')
+                .accordion();
+
+                $('.fade').slick({
+                    adaptiveHeight: true,
+                    dots: false,
+                    infinite: true,
+                    speed: 800,
+                    fade: true,
+                    cssEase: 'linear',
+                    arrows: false,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 2000,
+                });
+
+                $('.slidenavleft').on('click', function(){
+                    $('.fade').slick("slickPrev");
+                });
+
+                $('.slidenavright').on('click', function(){
+                    $('.fade').slick("slickNext");
+                });
+
+            });
+    </script>
+</head>
+
+<body>
+
+    <div class="ui fluid container">
+
+        <div class="ui stackable grid">
+            <div class="four wide menu column">
+
+                <h1 id="menutitle" class="ui header">
+                    <a href="index.html">Márton Király</a>
+                </h1>
+                <div class="ui vertical accordion menu">
+                    <div class="item">
+                        <a class="menu title">
+                            Personal
+                        </a>
+                        <div class="active personal content">
+                            <div class="accordion">
+                                <div class="item">
+                                    <a class="active project sub menu title">
+                                        Project
+                                    </a>
+                                    <div class="active project content">
+                                        <div class="accordion">
+                                            <div class="item">
+                                                <a class="active sub menu title" href="back-to-nature.html">
+                                                    Back to Nature
+                                                </a>
+                                            </div>
+                                            <div class="item">
+                                                <a class="sub menu title" href="the-cave.html">
+                                                    The Cave
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <a class="sub menu title" href="street.html">
+                                        Street
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a class="menu title">
+                            Commercial
+                        </a>
+                        <div class="commercial content">
+                            <div class="item">
+                                <a class="sub menu title" href="enterieur-architecture.html">
+                                    Enterieur/Architecture
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a class="sub menu title" href="event.html">
+                                    Event
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a class="sub menu title" href="fashion.html">
+                                    Fashion
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a class="sub menu title" href="business-portrait.html">
+                                    Business Portrait
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a class="menu title" href="video.html">
+                            Video
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a class="menu title" href="about.html">
+                            About
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a class="menu title" href="contact.html">
+                            Contact
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ten wide computer sixteen wide tablet sixteen wide mobile column">
+
+                <div class="fade">
+                    <div>
+                        <img class="ui fluid image" src="assets/images/back-to-nature/01.jpg" alt="">
+                        <div class="slidenavleft"></div>
+                        <div class="slidenavright"></div>
+                    </div>
+                    <div>
+                        <img class="ui fluid image" src="assets/images/back-to-nature/02.jpg" alt="">
+                        <div class="slidenavleft"></div>
+                        <div class="slidenavright"></div>
+                    </div>
+                    <div>
+                        <img class="ui fluid image" src="assets/images/back-to-nature/03.jpg" alt="">
+                        <div class="slidenavleft"></div>
+                        <div class="slidenavright"></div>
+                    </div>
+                    <div>
+                        <img class="ui fluid image" src="assets/images/back-to-nature/04.jpg" alt="">
+                        <div class="slidenavleft"></div>
+                        <div class="slidenavright"></div>
+                    </div>
+                    <div>
+                        <img class="ui fluid image" src="assets/images/back-to-nature/05.jpg" alt="">
+                        <div class="slidenavleft"></div>
+                        <div class="slidenavright"></div>
+                    </div>
+                    <div>
+                        <img class="ui fluid image" src="assets/images/back-to-nature/06.jpg" alt="">
+                        <div class="slidenavleft"></div>
+                        <div class="slidenavright"></div>
+                    </div>
+                    <div>
+                        <img class="ui fluid image" src="assets/images/back-to-nature/07.jpg" alt="">
+                        <div class="slidenavleft"></div>
+                        <div class="slidenavright"></div>
+                    </div>
+                    <div>
+                        <img class="ui fluid image" src="assets/images/back-to-nature/08.jpg" alt="">
+                        <div class="slidenavleft"></div>
+                        <div class="slidenavright"></div>
+                    </div>
+                    <div>
+                        <img class="ui fluid image" src="assets/images/back-to-nature/09.jpg" alt="">
+                        <div class="slidenavleft"></div>
+                        <div class="slidenavright"></div>
+                    </div>
+                    <div>
+                        <img class="ui fluid image" src="assets/images/back-to-nature/10.jpg" alt="">
+                        <div class="slidenavleft"></div>
+                        <div class="slidenavright"></div>
+                    </div>
+                    <div>
+                        <img class="ui fluid image" src="assets/images/back-to-nature/11.jpg" alt="">
+                        <div class="slidenavleft"></div>
+                        <div class="slidenavright"></div>
+                    </div>
+                    <div>
+                        <img class="ui fluid image" src="assets/images/back-to-nature/12.jpg" alt="">
+                        <div class="slidenavleft"></div>
+                        <div class="slidenavright"></div>
+                    </div>
+                </div>
+
+                <p class="project details">
+                    I have found this place on the top of a hill, spent a few months documenting it. Someone lived there, created an openair 
+                    home in the forest. The main part of it was located on the top of a tree. It was so shocking to see how strange, is when 
+                    consumer society's trash interacts with nature, led by somebody's wish to create a home.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
