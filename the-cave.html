@@ -28,7 +28,13 @@
         $(document)
             .ready(function () {
 
-                $('.ui.accordion').accordion();
+                $('.ui.accordion')
+                .accordion();
+
+                $('.fade').on('init', function(event, slick){
+                    var margin = $('.slick-slide').first().children().first().css('marginLeft');
+                    $('.project.details').first().css('marginLeft', margin).css('marginRight', margin);
+                });
 
                 $('.fade').slick({
                     adaptiveHeight: true,
@@ -196,11 +202,11 @@
                 </div>
 
                 <p class="project details">
-                    This project was part of my diploma work, and was inspired by Plato's The Allegory of the Cave, so let me quote from it:
-                    "Imagine this: People live  under the earth in a cavelike dwelling. Stretching a long way up toward the daylight is its ent-
-                    rance, toward which the entire cave is gathered. The people have been in this dwelling since childhood, shackled by the legs
-                    and neck.. Thus they stay in the same place so that there is only one thing for them to look that: whatever they en-
-                    counter in front of their faces. But because they are shackled, they are unable to turn their heads around.."
+                    This project was part of my diploma work, and was inspired by Plato's The Allegory of the Cave, so let me quote from it: 
+                    "Imagine this: People live  under the earth in a cavelike dwelling. Stretching a long way up toward the daylight is its 
+                    entrance, toward which the entire cave is gathered. The people have been in this dwelling since childhood, shackled by the 
+                    legs and neck.. Thus they stay in the same place so that there is only one thing for them to look that: whatever they encounter 
+                    in front of their faces. But because they are shackled, they are unable to turn their heads around.."
                 </p>
             </div>
         </div>
