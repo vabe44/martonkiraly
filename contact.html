@@ -125,7 +125,6 @@
             <div class="ten wide computer sixteen wide tablet sixteen wide mobile centered column">
 
                 <div class="contactcard">
-
                     <h1 id="contactname" class="ui inverted header">Márton Király</h1>
                     <h2 id="contacttitle" class="ui inverted header">Photographer</h2>
                     <p>
@@ -148,7 +147,30 @@
                     <p>
                         <img class="contact logo" src="assets/images/logo.png" alt="logo">
                     </p>
+                </div>
 
+                <div class="contact-form">
+                    <form class="ui form" action="https://formspree.io/vabe44@gmail.com" method="POST">
+                        <h1 class="form header">Contact Form</h1>
+
+                        <div class="field">
+                            <!-- <label>Name</label> -->
+                            <input type="text" name="name" placeholder="Your Name">
+                        </div>
+                        <div class="field">
+                            <!-- <label>Email</label> -->
+                            <input type="email" name="_replyto" placeholder="Email Address">
+                        </div>
+                        <div class="field">
+                            <!-- <label>Phone number</label> -->
+                            <input type="text" name="phone" placeholder="Phone number">
+                        </div>
+                        <div class="field">
+                            <!-- <label>Message</label> -->
+                            <textarea name="message" placeholder="Message"></textarea>
+                        </div>
+                        <button class="ui fluid black button" type="submit">Submit</button>
+                    </form>
                 </div>
 
             </div>
