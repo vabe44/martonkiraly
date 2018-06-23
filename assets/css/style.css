@@ -242,7 +242,7 @@ p.project.details {
     margin: 0 20px;
 }
 
-.about.text, .about.contact > p > a {
+.about.text, .about.contact > p > a, .about.contact p {
     font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif !important;
     color: black;
 }
